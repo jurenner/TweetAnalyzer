@@ -1,0 +1,4 @@
+consumer_key = 'v5bb7HD9PmYTvXuCBgCwa44qZ'
+consumer_secret = 'tlONgznY4y9S0E4D9JkDVABGGT8ACVgOySt3CPpsKUxU9IE2RS'
+twitter_token = '2888299528-05kwbmRfd82mneeJg2EMGhcMXXlFci6yaBWjxCA'
+twitter_token_secret = 'h0WLEeq7PNkC1Rd56eyM1oxi1KL4S9sXP8kigYxEB527B'

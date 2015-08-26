@@ -1,7 +1,7 @@
 TWEET ANALYZER
 ==========================
 
-TweetAnalyzer is a Python tool to collect and analyze tweets built on top of the Tweepy API.
+TweetAnalyzer is a Python tool to collect and analyze tweets built on top of the Tweepy API. 
 In short, this tool will:
 - Connect to Twitter's API through Tweepy (http://www.tweepy.org/)
 - Run and save a search

@@ -8,7 +8,7 @@ import urllib
 from urllib import parse
 import json
 
-# Exceptions classes
+# Exception classes
 class InputError(Exception): pass
 class TwitterConnectionError(Exception): pass
 
@@ -62,7 +62,7 @@ def main():
             print('Search completed.')
 
 def twitter_connection_factory(user):
-    """Opens the connection to the TwitterAPI"""
+    """Opens the connection to Twitter"""
 
     try:
         if user['consumer_key'] == '' or user['consumer_secret'] == '' \
@@ -137,6 +137,7 @@ def search_tweets(api, keyword, date_start, lang):
     return searched_tweets
 
 def save_search(searched_tweets):
+	"""Saves tweets found in 'tweets.txt'"""
     with open('tweets.txt', 'w') as file:
         for tweet in searched_tweets:
             try:
@@ -157,6 +158,7 @@ def save_search(searched_tweets):
     return True
 
 def clean_tweet(tweet, lang=''):
+	"""Cleans texts, removing punctuations, accents, special characters, urls, @s, numbers, stopwords and loose letters"""
     # Remove punctuation
     excludu = ['#', '@']
     for punct in string.punctuation:
@@ -254,8 +256,8 @@ def clean_tweet(tweet, lang=''):
 
     return ' '.join(tweet)
 
-# TODO improve sentiment analysis
 def analyze_tweets(tweets, lang):
+	"""Defined the most common words and hashtags and performs sentiment analysis"""
     print('')
     print('Analyzing tweets...')
 
